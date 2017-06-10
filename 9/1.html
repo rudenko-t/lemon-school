@@ -1,0 +1,163 @@
+
+<!Doctype html>
+<html lang="en">
+<head>
+	<title>Форма на уроке</title>
+	<meta charset ="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    form {
+        width: 500px;
+        margin: 10px auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    input[type="text"], input[type="password"] {
+        display: inline-block;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    input[type="text"]:focus, input[type="password"]:focus {
+        outline: none;
+        border-color: #bfbfbf;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    }
+    .field-group {
+        margin: 10px 0;
+    }
+    .field-group label {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    .border-top {
+        border-top: 1px solid #ccc;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .radio-group {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    .radio-group label {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    select {
+        display: inline-block;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    select:focus {
+        outline: none;
+        border-color: #bfbfbf;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    }
+    button {
+        display: inline-block;
+        width: 100%;
+        background-color: #ccc;
+        border: 1px solid #b3b3b3;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px;
+        margin: 10px 0;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    button:hover {
+        opacity: .8;
+    }
+    textarea {
+        display: block;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        resize: vertical;
+    }
+    textarea:focus {
+        outline: none;
+        border-color: #bfbfbf;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    }
+    </style>
+</head>
+<body>
+	<form action="#">
+		<h1>Fill the form</h1>
+        <div class="field-group">
+    		<label for="name">Your Name</label>
+    		<input type="text" placeholder="John" id="name" name="name">
+      </div>
+  		<div class="field-group">
+    		<label for="surname">Your Surname</label>
+    		<input type="text" placeholder="Doe" id="surname" name="surname">
+  		</div>
+  		<div class="field-group">
+    		<label for="email">Your Email</label>
+    		<input type="text" placeholder="mail@example.com" id="email" name="email">
+  		</div>
+  		<div class="field-group">
+    		<label for="password">Your Password</label>
+    		<input type="password" placeholder="Password" id="password" name="password">
+  		</div>
+    	<div class="field-group">
+    		<label for="comment">Few words about You</label>
+      		<textarea placeholder="Im awesome!" id="comment" name="comment"></textarea>
+  		</div>
+    	<div class="border-top">
+  	  		<label for="country">Your Country</label>
+  	  		<select name="country" id="country">
+        		<option value="ua">Ukraine</option>
+        		<option value="ua">USA</option>
+        		<option value="ua">Australia</option>
+  	  		</select>
+  		</div>
+  		<div class="border-top">
+	    	<p>Your gender</p>
+	    	<div class="radio-group">
+	      		<label>
+	        		<input type="radio" name="gender" value="male"> Male
+	      		</label>
+	    		<label>
+	        		<input type="radio" name="gender" value="female"> Female
+	    		</label>
+	    		<label>
+	        		<input type="radio" name="gender" value="other"> Other
+	      		</label>
+	    	</div>
+		</div>
+		<div>
+    		<label>
+      			<input type="checkbox" name="newsseller"> Subscribe to newsseller
+    		</label>
+  		</div>
+  		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

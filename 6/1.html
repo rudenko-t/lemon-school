@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Маркерный список</title>
+<style>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+		position: relative;
+		display: inline-block;
+		font-size: 30px;
+		padding-left: 10px;
+	}
+	a::after {
+		content: "";
+		position: absolute;			
+		height: 2px;width: 50%;
+		background-color: #000;
+		left: 10px;
+		bottom: 0;
+		transition: all 0.6s ease-out;
+	}
+	a:hover::after {
+		width: 100%;
+	}
+	.list {
+		list-style-type: none;
+		font-size: 20px;
+		line-height: 1.3;
+		margin-top: 40px;
+		margin-left: 60px;
+	}
+	.star::before {
+		content: "★"
+	}
+	.heart::before {
+		content:"❤";
+		margin-left: 50px;
+	}
+	.sun::before {
+		content:"☼";
+		margin-left: 100px;
+	}
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li class="star"><a href="#">Я простая ссылка</a></li>
+		<li class="star"><a href="#">Я ссылка с ховером</a></li>
+		<li class="heart"><a href="#">И еще одна ссылка во внутреннем списке</a></li>
+		<li class="heart"><a href="#">И еще одна ссылка во внутреннем списке</a></li>
+		<li class="heart"><a href="#">И еще одна ссылка во внутреннем списке</a></li>
+		<li class="sun"><a href="#">Последняя ссылка в списке 3-уровня</a></li>
+		<li class="heart"><a href="#">Вернемся назад</a></li>
+		<li class="star"><a href="#">И еще назад</a></li>
+	</ul>
+</body>
+</html>

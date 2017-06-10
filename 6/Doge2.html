@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Возвращение собачки</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.alldoge {
+			width: 920px;
+			margin-top: 60px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		img {
+			float: left;
+			border: solid 4px #ff001e;
+			margin: 0px 15px;
+		}
+		.doge {
+			position: relative;
+			display: inline-block;
+		}
+		.active {
+			display: none;
+			width: 270px;
+			height: 300px;
+			background-color: rgba(0, 0, 0, .3);
+			position: absolute;
+			top:0;
+			left: 15px;
+		}
+		.doge:hover .active {
+			display: block;
+			position: absolute;
+		}
+		.active_txt {
+			position: absolute;
+			left: 12px;
+			right: 12px;
+			background: #000;
+			font-size: 20px;
+			font-family: sans-serif;
+			color: #fff;
+			padding: 10px 5px;
+			bottom: 11px;
+			text-align: center;
+		}
+		a {
+			text-decoration: none;
+			color: #fff
+		}
+	</style>
+</head>
+<body>
+	<div class=alldoge>
+		<div class="doge">
+			<img src="d2.jpg">
+			<div class="active">
+			<span class="active_txt"><a href="#">Doge is amazing</a></span>
+			</div>
+		</div>
+		<div class="doge">
+			<img src="d2.jpg">
+			<div class="active">
+			<span class="active_txt"><a href="#">Doge is amazing</a></span>
+			</div>
+		</div>
+		<div class="doge">
+			<img src="d2.jpg">
+			<div class="active">
+			<span class="active_txt"><a href="#">Doge is amazing</a></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
